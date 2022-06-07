@@ -1,0 +1,16 @@
+[
+  {
+    "name": "lockerroom",
+    "path": "/lockerroom",
+    "component": "C:\\\\Dev\\\\hockey\\\\hockey06-06\\\\pages\\\\lockerroom.vue",
+    "chunkName": "pages/lockerroom",
+    "_name": "_1ab7ade0"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Dev\\\\hockey\\\\hockey06-06\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_6f003345"
+  }
+]

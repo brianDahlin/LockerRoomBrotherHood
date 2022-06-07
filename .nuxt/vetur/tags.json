@@ -1,0 +1,17 @@
+{
+  "Cone": {
+    "description": "Auto imported from components/Cone.vue"
+  },
+  "FullscreenHero": {
+    "description": "Auto imported from components/FullscreenHero.vue"
+  },
+  "Prepic": {
+    "description": "Auto imported from components/Prepic.vue"
+  },
+  "ZamboniContainer": {
+    "description": "Auto imported from components/ZamboniContainer.vue"
+  },
+  "ZamboniElement": {
+    "description": "Auto imported from components/ZamboniElement.vue"
+  }
+}
