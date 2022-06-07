@@ -194,7 +194,10 @@
           <div class='mint-counter-button-flex'>
             <div class="mint-counter">
               <button type="button" class="mint-minus" @click="mintQuantity(-1)"><span class="text-white">–</span></button>
-              <input class="mint-quantity d-inline-block" v-model.number="quantity"/>
+              <input class="mint-quantity d-inline-block" max-length="2"
+                  :value="quantity"
+                  @input="event => inputHandler(event.target.value)"
+              />
               <button type="button" class="mint-plus" @click="mintQuantity(1)"><span class="text-white">+</span></button>
             </div>
             <button id="mint-button-pink" @click="mintNft()" class="btn">MINT</button>
@@ -364,6 +367,22 @@ export default {
     firstYetiIsOnScreen(ohReally) {
       if (ohReally) this.hitYeti(0)
     },
+    inputHandler(value) {
+      console.log(value)
+      let number = value.replace(/\D/g, "")
+      if(Number(number)<1&&value!=''){
+        this.quantity = ''
+        this.quantity = 1
+      } else if (Number(value)>20) {
+        this.quantity = ''
+        this.quantity = 20
+      } else {
+        this.quantity = ''
+        this.quantity = number
+      }
+      console.log(this.quantity)
+      
+    },
     mintQuantity(q) {
       if ((this.quantity + q) < 21 && (this.quantity + q) > 0 ) this.quantity += q
     },
@@ -377,6 +396,7 @@ export default {
       this.account = res.account
     }
     console.log('this',this.web3, this.provider)
+    this.quantity = Number(this.quantity)>0? this.quantity : 1
     await mint(this.web3, this.account, this.quantity)
     }
   }
