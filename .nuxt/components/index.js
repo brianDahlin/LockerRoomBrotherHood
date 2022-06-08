@@ -1,8 +1,8 @@
-export const Cone = () => import('../..\\components\\Cone.vue' /* webpackChunkName: "components/cone" */).then(c => wrapFunctional(c.default || c))
-export const FullscreenHero = () => import('../..\\components\\FullscreenHero.vue' /* webpackChunkName: "components/fullscreen-hero" */).then(c => wrapFunctional(c.default || c))
-export const Prepic = () => import('../..\\components\\Prepic.vue' /* webpackChunkName: "components/prepic" */).then(c => wrapFunctional(c.default || c))
-export const ZamboniContainer = () => import('../..\\components\\ZamboniContainer.vue' /* webpackChunkName: "components/zamboni-container" */).then(c => wrapFunctional(c.default || c))
-export const ZamboniElement = () => import('../..\\components\\ZamboniElement.vue' /* webpackChunkName: "components/zamboni-element" */).then(c => wrapFunctional(c.default || c))
+export { default as Cone } from '../..\\components\\Cone.vue'
+export { default as FullscreenHero } from '../..\\components\\FullscreenHero.vue'
+export { default as Prepic } from '../..\\components\\Prepic.vue'
+export { default as ZamboniContainer } from '../..\\components\\ZamboniContainer.vue'
+export { default as ZamboniElement } from '../..\\components\\ZamboniElement.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

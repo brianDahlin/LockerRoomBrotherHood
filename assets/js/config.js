@@ -1,6 +1,6 @@
 
 const infura = 'fd7f608c12b74fa1ae34faa3e0f8b9d7'
-const isProduction = false
+const isProduction = true
 
 
 
@@ -18,7 +18,7 @@ const infuraIdETH = infura
 const RPCProviderETH = 'https://mainnet.infura.io/v3/fd7f608c12b74fa1ae34faa3e0f8b9d7'
 const netIdETH = 1
 const chainIdETH = '0x1'
-const contract_addressETH = ''
+const contract_addressETH = '0x45307591960C5A8da729521f7761F6978Ef5aC05'
 const mintPriceETH = 0.08
 const mintPresalePriceETH = 0.04
 
