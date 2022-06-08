@@ -9,7 +9,7 @@ const infuraIdRink = infura
 const RPCProviderRink = 'https://rinkeby.infura.io/v3/fd7f608c12b74fa1ae34faa3e0f8b9d7'
 const netIdRink = 4
 const chainIdRink = '0x4'
-const contract_addressRink = '0x9dF061837c8c3D4a8a994966d78C8115dF6e8e86'
+const contract_addressRink = '0xa603E13a3b5995dF0Ce0951bc8AA28EB85Bd39c4'
 const mintPriceRink = 0.08
 const mintPresalePriceRink = 0.04
 

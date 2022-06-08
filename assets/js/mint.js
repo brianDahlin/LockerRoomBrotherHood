@@ -54,16 +54,18 @@ export const mint = async (web3, account, inputAmount) => {
   console.log('isPresale', isPresale)
   if(isPresale){
     try {
-      whiteListed = await contract.methods.isWhiteListed(account).call()
+      const num = await contract.methods.isWhitelisted(account).call()
+      whiteListed = num==0? false : true
       console.log('whitelisted', whiteListed)
     } catch (error) {
-      console.log('whiteListedCall err', whiteListedCall)
+      console.log('whiteListedCall err', error)
     }
   }
 
   if (isPresale) {
     if (whiteListed) {
       try {
+        console.log('presale')
         showToastLoader('Mint transaction in progress...')
         await contract.methods.mintPresale(amount).send({
               from: account, 
@@ -86,7 +88,7 @@ export const mint = async (web3, account, inputAmount) => {
       }
     } else {
       Toastify({
-        text: amount>1?`You have successfully minted ${amount} NFTs!`:'You have successfully minted NFT!',
+        text: 'Presale is active. You are not whitelisted!',
         style: toastStyle,
       }).showToast();
     }
