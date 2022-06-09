@@ -41,7 +41,7 @@
             <li><a href="https://discord.gg/4GYvvreWKm" target="_blank" aria-label="discord"><img src="../static/icons/discord.svg" alt="Discord"/></a></li>
             <li><a href="https://twitter.com/LockerRoomBH" target="_blank" aria-label="twitter"><img src="../static/icons/twitter.svg" alt="Twitter"/></a></li>
             <li><a href="https://instagram.com/lockerroombrotherhood" target="_blank" aria-label="instagram"><img src="../static/icons/insta.svg" alt="Instagram"/></a></li>
-            <li><a aria-label="opensea" style="opacity: .5;"><img src="../static/icons/opensea.svg" alt="OpenSea"/></a></li>
+            <li><a href="https://opensea.io/collection/locker-room-brotherhood-v2" target="_blank" aria-label="opensea" ><img src="../static/icons/opensea.svg" alt="OpenSea"/></a></li>
           </ul>
         </div>
         <div class="col-12 col-lg-6 mt-auto d-flex">
@@ -265,7 +265,7 @@
             </div>
             <div class="col-6 col-lg-12">
               <a href="https://instagram.com/lockerroombrotherhood" target="_blank" aria-label="instagram" class="instagram"><img src="../static/icons/instaL.svg" alt="Instagram"/><span>Instagram</span></a>
-              <a aria-label="opensea" class="opensea" style="opacity: .5;"><img src="../static/icons/openseaL.svg" alt="OpenSea"/><span>OpenSea</span></a>
+              <a href="https://opensea.io/collection/locker-room-brotherhood-v2" target="_blank" aria-label="opensea" class="opensea"><img src="../static/icons/openseaL.svg" alt="OpenSea"/><span>OpenSea</span></a>
             </div>
           </div>
         </div>
@@ -306,7 +306,20 @@
       </div>
     </div>
     <div class="container">
-      <div class="row">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="launcher-copyright text-white text-uppercase mt-3 view-contract">
+              VERIFIED&nbsp;SMART&nbsp;CONTRACT&nbsp;ADDRESS:&nbsp;
+              <a class='contract-link' href='https://etherscan.io/address/0x45307591960C5A8da729521f7761F6978Ef5aC05' target='_blank'>
+                https://etherscan.io/address/0x45307591960C5A8da729521f7761F6978Ef5aC05
+              </a>
+            </p>
+            <div class="goalie-mask">
+              <img src="../static/mask.png"/>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-12 text-center">
             <p class="launcher-copyright text-white text-uppercase mt-3">
               Copyright&nbsp;2022 • Locker&nbsp;Room&nbsp;Brotherhood • All&nbsp;rights&nbsp;reserved.
@@ -1750,5 +1763,13 @@ export default {
   display: flex;
   flex-wrap: nowrap !important;
 }
-
+.contract-link {
+  color: #D232EA !important;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .contract-link {
+    font-size: 9px;
+  }
+  }
 </style>
