@@ -38,10 +38,10 @@
       <div class="row h-100 pt-1">
         <div class="col-12 col-lg-4 offset-lg-2 mt-lg-auto col-xl-6 offset-xl-0 mb-xl-4">
           <ul class="hero-social mt-2 mb-lg-4">
-            <li><a href="https://discord.gg/4GYvvreWKm" target="_blank" aria-label="discord"><img src="../static/icons/discord.svg" alt="Discord"/></a></li>
+            <li><a href="https://discord.gg/bWyJMrU7p4" target="_blank" aria-label="discord"><img src="../static/icons/discord.svg" alt="Discord"/></a></li>
             <li><a href="https://twitter.com/LockerRoomBH" target="_blank" aria-label="twitter"><img src="../static/icons/twitter.svg" alt="Twitter"/></a></li>
             <li><a href="https://instagram.com/lockerroombrotherhood" target="_blank" aria-label="instagram"><img src="../static/icons/insta.svg" alt="Instagram"/></a></li>
-            <li><a href="https://opensea.io/collection/locker-room-brotherhood-v2" target="_blank" aria-label="opensea" ><img src="../static/icons/opensea.svg" alt="OpenSea"/></a></li>
+            <li><a href="https://opensea.io/collection/lrbh" target="_blank" aria-label="opensea" ><img src="../static/icons/opensea.svg" alt="OpenSea"/></a></li>
           </ul>
         </div>
         <div class="col-12 col-lg-6 mt-auto d-flex">
@@ -189,6 +189,14 @@
           </h2>
           <p class="text-uppercase">1 NFT COST 0,08 ETH.</p>
           <p class="text-uppercase">COLLECTION 10.000 NFTs.</p>
+          <p class="launcher-copyright text-white text-uppercase mt-3 view-contract mint-contr" style='font-size:20px'>
+            VERIFIED&nbsp;SMART&nbsp;CONTRACT&nbsp;ADDRESS:&nbsp;
+            <div class='mint-contract-divider'></div>
+            <a  class='contract-link mint-contract-link' href='https://etherscan.io/address/0x45307591960C5A8da729521f7761F6978Ef5aC05' target='_blank'>
+              https://etherscan.io/address/0x45307591960C5A8da729521f7761F6978Ef5aC05
+            </a>
+          </p>
+            
         </div>
         <div class="col-12 col-xl-4 offset-xl-0 d-flex flex-wrap align-items-center justify-content-center">
           <div class='mint-counter-button-flex'>
@@ -202,12 +210,12 @@
             </div>
             <button id="mint-button-pink" @click="mintNft()" class="btn">MINT</button>
           </div>
-          <div class="timer">
+          <!-- <div class="timer">
             <client-only>
               <flip-countdown :labels="labels" deadline="2022-06-08 20:00:00 UTC">
               </flip-countdown>
             </client-only>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -260,12 +268,12 @@
           <h2><img src="../static/our_socials.svg" alt="Our socials"/></h2>
           <div class="row">
             <div class="col-6 col-lg-12">
-              <a href="https://discord.gg/4GYvvreWKm" target="_blank" aria-label="discord" class="discord"><img src="../static/icons/discordL.svg" alt="Discord"/><span>Discord</span></a>
+              <a href="https://discord.gg/bWyJMrU7p4" target="_blank" aria-label="discord" class="discord"><img src="../static/icons/discordL.svg" alt="Discord"/><span>Discord</span></a>
               <a href="https://twitter.com/LockerRoomBH" target="_blank" aria-label="twitter" class="twitter"><img src="../static/icons/twitterL.svg" alt="Twitter"/><span>Twitter</span></a>
             </div>
             <div class="col-6 col-lg-12">
               <a href="https://instagram.com/lockerroombrotherhood" target="_blank" aria-label="instagram" class="instagram"><img src="../static/icons/instaL.svg" alt="Instagram"/><span>Instagram</span></a>
-              <a href="https://opensea.io/collection/locker-room-brotherhood-v2" target="_blank" aria-label="opensea" class="opensea"><img src="../static/icons/openseaL.svg" alt="OpenSea"/><span>OpenSea</span></a>
+              <a href="https://opensea.io/collection/lrbh" target="_blank" aria-label="opensea" class="opensea"><img src="../static/icons/openseaL.svg" alt="OpenSea"/><span>OpenSea</span></a>
             </div>
           </div>
         </div>
@@ -1767,9 +1775,23 @@ export default {
   color: #D232EA !important;
   font-weight: bold;
 }
+.mint-contr{
+
+}
+.mint-contract-link{}
 @media (max-width: 500px) {
   .contract-link {
     font-size: 9px;
+  }
+  .mint-contr{
+    font-size: 10px !important;
+    margin-bottom: 0;
+  }
+  .mint-contract-link{
+    margin-left: -25px !important;
+  }
+  .mint-contract-divider{
+    display:none;
   }
   }
 </style>

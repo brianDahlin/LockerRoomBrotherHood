@@ -10,10 +10,10 @@
     <div class="row h-100 pt-1 pt-md-3">
       <div class="col-12 pl-3">
         <ul class="hero-social">
-          <li><a href="https://discord.gg/4GYvvreWKm" target="_blank" aria-label="discord"><img src="../static/icons/discord.svg" alt="Discord"/></a></li>
+          <li><a href="https://discord.gg/bWyJMrU7p4" target="_blank" aria-label="discord"><img src="../static/icons/discord.svg" alt="Discord"/></a></li>
           <li><a href="https://twitter.com/LockerRoomBH" target="_blank" aria-label="twitter"><img src="../static/icons/twitter.svg" alt="Twitter"/></a></li>
           <li><a href="https://instagram.com/lockerroombrotherhood" target="_blank" aria-label="instagram"><img src="../static/icons/insta.svg" alt="Instagram"/></a></li>
-          <li><a href="https://opensea.io/collection/locker-room-brotherhood-v2" target="_blank" aria-label="opensea"><img src="../static/icons/opensea.svg" alt="OpenSea"/></a></li>
+          <li><a href="https://opensea.io/collection/lrbh" target="_blank" aria-label="opensea"><img src="../static/icons/opensea.svg" alt="OpenSea"/></a></li>
         </ul>
       </div>
       <div class="col offset-lg-1 align-self-end">
