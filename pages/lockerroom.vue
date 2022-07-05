@@ -183,7 +183,7 @@
     </div>
     <div class="container mint-container">
       <div class="row">
-        <div class="col-10 offset-1 col-xl-8 offset-xl-0">
+        <div class="col-10 offset-1 col-xl-8 offset-xl-0 mint-container__flex">
           <h2>
             <img src="../static/jtb.svg" alt="Join the brotherhood"/>
           </h2>
@@ -191,12 +191,11 @@
           <p class="text-uppercase">COLLECTION 10.000 NFTs.</p>
           <p class="launcher-copyright text-white text-uppercase mt-3 view-contract mint-contr" style='font-size:20px'>
             VERIFIED&nbsp;SMART&nbsp;CONTRACT&nbsp;ADDRESS:&nbsp;
-            <div class='mint-contract-divider'></div>
-            <a  class='contract-link mint-contract-link' href='https://etherscan.io/address/0x45307591960C5A8da729521f7761F6978Ef5aC05' target='_blank'>
-              https://etherscan.io/address/0x45307591960C5A8da729521f7761F6978Ef5aC05
-            </a>
           </p>
-            
+          <div class='mint-contract-divider'></div>
+          <a  class='contract-link mint-contract-link' href='https://etherscan.io/address/0x45307591960C5A8da729521f7761F6978Ef5aC05' target='_blank'>
+            0x45307591960C5A8da729521f7761F6978Ef5aC05
+          </a>
         </div>
         <div class="col-12 col-xl-4 offset-xl-0 d-flex flex-wrap align-items-center justify-content-center">
           <div class='mint-counter-button-flex'>
@@ -319,7 +318,7 @@
             <p class="launcher-copyright text-white text-uppercase mt-3 view-contract">
               VERIFIED&nbsp;SMART&nbsp;CONTRACT&nbsp;ADDRESS:&nbsp;
               <a class='contract-link' href='https://etherscan.io/address/0x45307591960C5A8da729521f7761F6978Ef5aC05' target='_blank'>
-                https://etherscan.io/address/0x45307591960C5A8da729521f7761F6978Ef5aC05
+                0x45307591960C5A8da729521f7761F6978Ef5aC05
               </a>
             </p>
             <div class="goalie-mask">
@@ -1786,9 +1785,15 @@ export default {
   .mint-contr{
     font-size: 10px !important;
     margin-bottom: 0;
+    
+  }
+  .mint-container__flex{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
   }
   .mint-contract-link{
-    margin-left: -25px !important;
+    // margin-left: -25px !important;
   }
   .mint-contract-divider{
     display:none;

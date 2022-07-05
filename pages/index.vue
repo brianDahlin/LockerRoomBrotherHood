@@ -22,7 +22,7 @@
           <p class="launcher-copyright text-white text-uppercase">
             VERIFIED&nbsp;SMART&nbsp;CONTRACT&nbsp;ADDRESS:&nbsp;
             <a class='contract-link' href='https://etherscan.io/address/0x45307591960C5A8da729521f7761F6978Ef5aC05' target='_blank'>
-              https://etherscan.io/address/0x45307591960C5A8da729521f7761F6978Ef5aC05
+              0x45307591960C5A8da729521f7761F6978Ef5aC05
             </a>
           </p>
         </div>
