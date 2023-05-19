@@ -54,7 +54,7 @@ import { chainId, infuraId, netId, RPCProvider, toastStyle } from './config';
 
   export const initWeb3 = async () => {
     const web3Modal = new Web3Modal({
-      network: 'mainnet',
+      network: 'goerli',
       cacheProvider: false, // optional
       providerOptions: provOptions, // required
       disableInjectedProvider: false, // optional. For MetaMask / Brave / Opera.

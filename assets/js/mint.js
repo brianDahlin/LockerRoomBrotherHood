@@ -1,6 +1,6 @@
 import Toastify from "toastify-js";
 import { abi } from "./abi";
-import { contract_address, mintPresalePrice, mintPrice, toastStyle } from "./config";
+import { contract_address, mintPrice, toastStyle } from "./config";
 import { hideAllToasts, showToastLoader } from "./connect";
 
 
